@@ -1,0 +1,522 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #0066cc;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links ul li {
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .nav-links ul li:hover .sub-menu {
+    display: block;
+  }
+  
+  .nav-links .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #004999;
+    padding: 10px;
+    list-style: none;
+    top: 40px;
+    left: 0;
+  }
+  
+  .nav-links .sub-menu li a {
+    padding: 5px 10px;
+    display: block;
+  }
+  
+  .search-box {
+    position: relative;
+  }
+  
+  .search-box i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .input-box {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    display: none;
+  }
+  
+  .input-box input {
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
+  /* Responsive Design */
+  #menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #close-icon {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      background-color: #0066cc;
+      width: 100%;
+      top: 50px;
+      left: 0;
+      z-index: 100;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-links ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .search-box {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: block;
+    }
+  
+    #close-icon {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  
+    .input-box {
+      display: block;
+    }
+  }
+  
+
+/* Navbar design end */
+
+/* header section design start */
+.header-section-main-image{
+    background-image: url("../assets/Hero-bg.png");
+    width: 100%;
+    height: 500px;
+    top: 131px;
+    text-align: center;
+}
+.header-developer-image{
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+}
+ .header-main-text h1{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 48px;
+    font-weight: 600;
+    width: 810px;
+    margin-left: 360px;
+    margin-top: 10px;
+ }
+ .header-main-text p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -40px;
+ }
+ .header-main-text button{
+    border-radius: 8px;
+    background: rgb(13, 19, 33);
+    color: white;
+    width: 170px;
+    height: 48px;
+    padding: 12px 14px 12px 14px;
+    margin-top: 5px;
+    cursor: pointer;
+
+ }
+/* header section design end */
+
+/* Why web development section design start */
+
+.web-development-section{
+    background: rgba(13, 19, 33, 0.02);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 90px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+.second-section-main-text h3{
+    text-align: center;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 32px;
+    font-weight: 800;
+}
+.second-section-main-text p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    width: 600px;
+    text-align: center;
+    margin-left: 250px;
+}
+/* Why web development section design end */
+
+/* Coding challenge start design  */
+
+.main-section-two{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 90px 20px 130px;
+    margin-top: 50px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);;
+    padding: 50px;
+    background: linear-gradient(90.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+}
+.main-section-two-text h4{
+    color: rgba(13, 19, 33, 0.7);
+    font-family: Azeret Mono;
+    font-size: 24px;
+    font-weight: 700;
+}
+.main-section-two-text p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 70px;
+}
+.main-section-two-text button{
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    opacity: 0.7;
+    width: 171px;
+    height: 47px;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Coding challenge end design  */
+
+/* main section three design start */
+
+.main-section-three{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 90px 20px 130px;
+    margin-top: 30px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);;
+    padding: 50px;
+    background: linear-gradient(90.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+}
+.main-section-three-text h4{
+    color: rgba(13, 19, 33, 0.7);
+    font-family: Azeret Mono;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 150px;
+}
+.main-section-three-text p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 150px;
+}
+.main-section-three-text  button{
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    opacity: 0.7;
+    width: 171px;
+    height: 47px;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 150px;
+}
+/* main section three design end */
+
+/* main-section-four design start */
+
+.main-section-four{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 90px 20px 130px;
+    margin-top: 30px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.2);;
+    padding: 50px;
+    background: linear-gradient(90.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+}
+.main-section-four h4{
+    color: rgba(13, 19, 33, 0.7);
+    font-family: Azeret Mono;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 50px;
+}
+.main-section-four p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 150px;
+}
+.main-section-four button{
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    opacity: 0.7;
+    width: 171px;
+    height: 47px;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* main-section-four design end */
+
+/* My Inspiration section design start */
+
+.myinspiration-section-main-text h3{
+    text-align: center;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 32px;
+    font-weight: 800;
+}
+.myinspiration-section-main-text p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    width: 600px;
+    text-align: center;
+    margin-left: 450px;
+}
+.my-video{
+margin-left: 220px;
+margin-top: 50px;
+}
+/* My Inspiration section design end */
+
+/* my-current-target-head design start*/
+
+.current-target-main-text h3{
+    text-align: center;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 32px;
+    font-weight: 800;
+}
+.current-target-main-text p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    width: 600px;
+    text-align: center;
+    margin-left: 440px;
+}
+.my-current-target-head{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 230px 70px 230px;
+    gap: 20px;
+}
+.my-current-target{
+    padding: 40px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 76, 30, 0.05);
+}
+.two{
+    padding: 40px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(0, 76, 232, 0.05);
+}
+.three{
+    padding: 40px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 223, 0, 0.05)
+}
+.my-current-target button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+/* my-current-target design end*/
+
+/* My next target design start */
+
+.next-target-main-text h3{
+    text-align: center;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 32px;
+    font-weight: 800;
+}
+.next-target-main-text p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    width: 600px;
+    text-align: center;
+    margin-left: 440px;
+}
+.next-target-head{
+    display: flex;
+    margin: 70px 230px 70px 230px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.my-next-target-image{
+    margin-top: 33px;
+    margin-right: 20px;
+}
+.my-next-target-text button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+/* My next target design end */
+
+/* My contact form design start */
+.my-contact{
+    background-image: linear-gradient(180.00deg, rgb(16, 16, 16) -20.5%,rgba(16, 16, 16, 0) 100%),url("../assets/handshake.jpg");
+    background-repeat: no-repeat;
+    margin: 90px 230px 90px 230px;
+    border-radius: 16px;
+    width: 1050px;
+    height: 300px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.my-contact h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    color: rgb(255, 255, 255);
+    font-family: Azeret Mono;
+    font-size: 32px;
+    font-weight: 700;
+}
+.my-contact p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+}
+.my-contact input[type="text"]{
+    margin-left: 250px;
+    width: 448px;
+    height: 47px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: rgba(13, 19, 33, 0.4);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+}
+.my-contact input[type="submit"]{
+    width: 120px;
+    height: 47px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+/* Footer Design Start*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 200px 15px 0px;
+    background: rgba(13, 19, 33, 0.03);
+    width: 100%;
+    height: 100px;
+}
+.footer-text{
+    margin-top: 23px;
+    margin-left: 235px;
+}
+.footer-image{
+    margin-top: 35px;
+    margin-right: 228px;
+}
+/* Footer Design End*/
