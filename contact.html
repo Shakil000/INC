@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Equipment Selling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <header>
+        <nav class="bg-white border-gray-200 dark:bg-gray-50 shadow-lg">
+            <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <!-- Logo Section -->
+              <a href="#" class="flex items-center">
+                <img src="./assets/WhatsApp Image 2024-11-24 at 15.52.09_6ae342a4.png" class="h-16" alt="Logo" />
+              </a>
+        
+              <!-- Mobile Menu Button -->
+              <button id="mobile-menu-button" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
+        
+              <!-- Main Navbar -->
+              <div id="mobile-menu" class="hidden w-full md:block md:w-auto">
+                <ul
+                  class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-sm font-medium bg-gray-50 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent">
+                  <li>
+                    <a href="#" class="block py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-blue-600 font-bold">Home</a>
+                  </li>
+                  <li>
+                    <a href="/about.html" class="block py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-blue-600 font-bold">About</a>
+                  </li>
+                  <li class="relative">
+                    <button id="dropdown-button" type="button"
+                      class="flex items-center w-full py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-blue-600 font-bold">
+                      Products & Solutions
+                      <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4" />
+                      </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div id="dropdown-menu"
+                      class="absolute left-0 z-10 hidden mt-2 w-44 bg-white rounded-lg shadow-md dark:bg-gray-700">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Research microscopy solutions</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Microbiology and microbial solutions</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Applied genomics and live science</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Water and environment</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Material characterization</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Informatics</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Centrifuges and incubators</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Water purification systems</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Laboratory instruments</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Consumables</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Data logger</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-blue-600 font-bold">Industry Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-blue-600 font-bold">Principals</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-blue-600 font-bold">Gallery and Trade Shows</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="block py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-blue-600 font-bold">Contact & Support</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-blue-600 font-bold">Blog & Resources</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- navbar script start -->
+          <script>
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenuButton.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+            });
+        
+            // Dropdown toggle
+            const dropdownButton = document.getElementById("dropdown-button");
+            const dropdownMenu = document.getElementById("dropdown-menu");
+            dropdownButton.addEventListener("click", () => {
+              dropdownMenu.classList.toggle("hidden");
+            });
+          </script>
+          <!-- navbar script end -->
+
+        
+          <script>
+            const slider = document.getElementById("slider");
+            const next = document.getElementById("next");
+            const prev = document.getElementById("prev");
+            let index = 0;
+        
+            next.addEventListener("click", () => {
+              index = (index + 1) % 4; // 4 slides
+              slider.style.transform = `translateX(-${index * 100}%)`;
+            });
+        
+            prev.addEventListener("click", () => {
+              index = (index - 1 + 4) % 4; // 4 slides
+              slider.style.transform = `translateX(-${index * 100}%)`;
+            });
+          </script>
+    </header>
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-gray-50">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl">Get in Touch</h2>
+                <p class="mt-4 text-lg text-gray-600">Have questions or need more details? Contact us today!</p>
+            </div>
+
+            <div class="mt-10 flex flex-col lg:flex-row lg:space-x-10">
+                <!-- Contact Form -->
+                <div class="flex-1 bg-white shadow-lg rounded-lg p-6 lg:p-10">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Send Us a Message</h3>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full rounded-md bg-blue-600 px-4 py-2 text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Send
+                                Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="mt-10 lg:mt-0 flex-1 bg-white shadow-lg rounded-lg p-6 lg:p-10">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                    <p class="text-gray-600">We’re here to help. Reach out to us through any of the options below:</p>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-center">
+                            <svg class="h-6 w-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 10l7 7m0 0l7-7m-7 7V3" />
+                            </svg>
+                            <div class="ml-4">
+                                <a href="tel:+1234567890" class="text-lg font-medium text-gray-800">+1 234 567 890</a>
+                                <p class="text-sm text-gray-600">Customer Support</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-6 w-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16 12H7m5 0V8m0 4v4" />
+                            </svg>
+                            <div class="ml-4">
+                                <a href="mailto:info@equipmentselling.com"
+                                    class="text-lg font-medium text-gray-800">info@equipmentselling.com</a>
+                                <p class="text-sm text-gray-600">Email Us</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-6 w-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 10h18m-9 4H9m6 0h3" />
+                            </svg>
+                            <div class="ml-4">
+                                <p class="text-lg font-medium text-gray-800">123 Main Street, Equipment City, USA</p>
+                                <p class="text-sm text-gray-600">Our Location</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="mt-12">
+                <h3 class="text-center text-xl font-bold text-gray-800 mb-4">Find Us on the Map</h3>
+                <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345095435!2d-122.42177808468293!3d37.774929279759184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085816e6c3a6cbb%3A0x93d3e47c6ecb58f!2sEquipment%20Store!5e0!3m2!1sen!2sus!4v1635456769478!5m2!1sen!2sus"
+                        class="w-full h-full" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
